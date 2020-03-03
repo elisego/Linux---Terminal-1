@@ -1,0 +1,435 @@
+administrateur@pc-linuxshop-8796:~$ ls
+Bureau     Images   Musique  Public           Vidéos
+Documents  Modèles  PDF      Téléchargements
+administrateur@pc-linuxshop-8796:~$ ls Téléchargements
+1NAPHUPP85-recapitulatif-cni.pdf  osthéofévrier.pdf
+2019188170132.pdf                 resiliationsfr.doc
+Conseillepoleemploi.pdf           sfr-facture-0.pdf
+DMP_GODARD_20191112.pdf           sfr-facture-B419-021428482.pdf
+document.pdf
+administrateur@pc-linuxshop-8796:~$ pwd
+/home/administrateur
+administrateur@pc-linuxshop-8796:~$ cd image
+bash: cd: image: Aucun fichier ou dossier de ce type
+administrateur@pc-linuxshop-8796:~$ cd Images
+administrateur@pc-linuxshop-8796:~/Images$ 
+administrateur@pc-linuxshop-8796:~/Images$ cd ..
+administrateur@pc-linuxshop-8796:~$ pwd
+/home/administrateur
+administrateur@pc-linuxshop-8796:~$ cd ..
+administrateur@pc-linuxshop-8796:/home$ pwd
+/home
+administrateur@pc-linuxshop-8796:/home$ cd ..
+administrateur@pc-linuxshop-8796:/$ pwd
+/
+administrateur@pc-linuxshop-8796:/$ ls
+bin    etc             lib         mnt   run       sys        var
+boot   home            lib64       opt   sbin      timeshift  vmlinuz
+cdrom  initrd.img      lost+found  proc  srv       tmp        vmlinuz.old
+dev    initrd.img.old  media       root  swapfile  usr
+administrateur@pc-linuxshop-8796:/$ cd home/administrateur
+administrateur@pc-linuxshop-8796:~$ pwd
+/home/administrateur
+administrateur@pc-linuxshop-8796:~$ cd home
+bash: cd: home: Aucun fichier ou dossier de ce type
+administrateur@pc-linuxshop-8796:~$ pwd
+/home/administrateur
+administrateur@pc-linuxshop-8796:~$ ls
+Bureau     Images   Musique  Public           Vidéos
+Documents  Modèles  PDF      Téléchargements
+administrateur@pc-linuxshop-8796:~$ Bureau
+Bureau : commande introuvable
+administrateur@pc-linuxshop-8796:~$ cd Bureau/
+administrateur@pc-linuxshop-8796:~/Bureau$ pwd
+/home/administrateur/Bureau
+administrateur@pc-linuxshop-8796:~/Bureau$ ls
+'Baron Noir'             'cours dev'                      'The Mandalorian'
+ Bootstrap                ohmycode
+"Carte d'identité .pdf"   sfr-facture-B419-013054700.pdf
+administrateur@pc-linuxshop-8796:~/Bureau$ cd cd ~
+bash: cd: trop d'arguments
+administrateur@pc-linuxshop-8796:~/Bureau$ cd~
+
+La commande « cd~ » n'a pas été trouvée, voulez-vous dire :
+
+  commande « cdi » du deb cdo
+  commande « cdp » du deb irpas
+  commande « cdo » du deb cdo
+  commande « cdw » du deb cdw
+  commande « cdv » du deb codeville
+  commande « cd5 » du deb cd5
+  commande « cde » du deb cde
+  commande « cdb » du deb tinycdb
+
+Essayez : sudo apt install <nom du deb>
+
+administrateur@pc-linuxshop-8796:~/Bureau$ cd ~
+administrateur@pc-linuxshop-8796:~$ pwd
+/home/administrateur
+administrateur@pc-linuxshop-8796:~$ ls
+Bureau     Images   Musique  Public           Vidéos
+Documents  Modèles  PDF      Téléchargements
+administrateur@pc-linuxshop-8796:~$ cd Bureau
+administrateur@pc-linuxshop-8796:~/Bureau$ cd ~ Public
+bash: cd: trop d'arguments
+administrateur@pc-linuxshop-8796:~/Bureau$ cd ~ /Images
+bash: cd: trop d'arguments
+administrateur@pc-linuxshop-8796:~/Bureau$ cd ~/Images
+administrateur@pc-linuxshop-8796:~/Images$ pwd
+/home/administrateur/Images
+administrateur@pc-linuxshop-8796:~/Images$ ls
+ 2019   2020  'mercedes '   numserie.jpg   rukia.jpg
+administrateur@pc-linuxshop-8796:~/Images$ ls .
+ 2019   2020  'mercedes '   numserie.jpg   rukia.jpg
+administrateur@pc-linuxshop-8796:~/Images$ ls ~a
+ls: impossible d'accéder à '~a': Aucun fichier ou dossier de ce type
+administrateur@pc-linuxshop-8796:~/Images$ ls -a
+ .   ..   2019   2020  'mercedes '   numserie.jpg   rukia.jpg
+administrateur@pc-linuxshop-8796:~/Images$ ls /bin
+archdetect          efibootdump  mt-gnu         sh
+bash                efibootmgr   mv             sh.distrib
+brltty              egrep        nano           sleep
+btrfs               false        nc             ss
+btrfsck             fgconsole    nc.openbsd     static-sh
+btrfs-debug-tree    fgrep        netcat         stty
+btrfs-find-root     findmnt      netstat        su
+btrfs-image         fsck.btrfs   networkctl     sync
+btrfs-map-logical   fuser        nisdomainname  systemctl
+btrfs-select-super  fusermount   ntfs-3g        systemd
+btrfstune           getfacl      ntfs-3g.probe  systemd-ask-password
+btrfs-zero-log      grep         ntfscat        systemd-escape
+bunzip2             gunzip       ntfscluster    systemd-hwdb
+busybox             gzexe        ntfscmp        systemd-inhibit
+bzcat               gzip         ntfsfallocate  systemd-machine-id-setup
+bzcmp               hciconfig    ntfsfix        systemd-notify
+bzdiff              hostname     ntfsinfo       systemd-sysusers
+bzegrep             ip           ntfsls         systemd-tmpfiles
+bzexe               journalctl   ntfsmove       systemd-tty-ask-password-agent
+bzfgrep             kbd_mode     ntfsrecover    tar
+bzgrep              keyctl       ntfssecaudit   tempfile
+bzip2               kill         ntfstruncate   touch
+bzip2recover        kmod         ntfsusermap    true
+bzless              less         ntfswipe       udevadm
+bzmore              lessecho     open           ulockmgr_server
+cat                 lessfile     openvt         umount
+chacl               lesskey      pidof          uname
+chgrp               lesspipe     ping           uncompress
+chmod               ln           ping4          unicode_start
+chown               loadkeys     ping6          vdir
+chvt                login        plymouth       wdctl
+cp                  loginctl     ps             which
+cpio                lowntfs-3g   pwd            whiptail
+dash                ls           rbash          ypdomainname
+date                lsblk        readlink       zcat
+dd                  lsmod        red            zcmp
+df                  mkdir        rm             zdiff
+dir                 mkfs.btrfs   rmdir          zegrep
+dmesg               mknod        rnano          zfgrep
+dnsdomainname       mktemp       run-parts      zforce
+domainname          more         sed            zgrep
+dumpkeys            mount        setfacl        zless
+echo                mountpoint   setfont        zmore
+ed                  mt           setupcon       znew
+administrateur@pc-linuxshop-8796:~/Images$ ls Images
+ls: impossible d'accéder à 'Images': Aucun fichier ou dossier de ce type
+administrateur@pc-linuxshop-8796:~/Images$ cd ..
+administrateur@pc-linuxshop-8796:~$ ls Images
+ 2019   2020  'mercedes '   numserie.jpg   rukia.jpg
+administrateur@pc-linuxshop-8796:~$ ls /home
+administrateur
+administrateur@pc-linuxshop-8796:~$ ls ..
+administrateur
+administrateur@pc-linuxshop-8796:~$ ls ..
+administrateur
+administrateur@pc-linuxshop-8796:~$ pwd
+/home/administrateur
+administrateur@pc-linuxshop-8796:~$ ls
+Bureau     Images   Musique  Public           Vidéos
+Documents  Modèles  PDF      Téléchargements
+administrateur@pc-linuxshop-8796:~$ cd Documents 
+administrateur@pc-linuxshop-8796:~/Documents$ ls ..
+Bureau     Images   Musique  Public           Vidéos
+Documents  Modèles  PDF      Téléchargements
+administrateur@pc-linuxshop-8796:~/Documents$ ls ..
+Bureau     Images   Musique  Public           Vidéos
+Documents  Modèles  PDF      Téléchargements
+administrateur@pc-linuxshop-8796:~/Documents$ ls /home
+administrateur
+administrateur@pc-linuxshop-8796:~/Documents$ ls ..
+Bureau     Images   Musique  Public           Vidéos
+Documents  Modèles  PDF      Téléchargements
+administrateur@pc-linuxshop-8796:~/Documents$ cd ~
+administrateur@pc-linuxshop-8796:~$ ls /bin
+archdetect          efibootdump  mt-gnu         sh
+bash                efibootmgr   mv             sh.distrib
+brltty              egrep        nano           sleep
+btrfs               false        nc             ss
+btrfsck             fgconsole    nc.openbsd     static-sh
+btrfs-debug-tree    fgrep        netcat         stty
+btrfs-find-root     findmnt      netstat        su
+btrfs-image         fsck.btrfs   networkctl     sync
+btrfs-map-logical   fuser        nisdomainname  systemctl
+btrfs-select-super  fusermount   ntfs-3g        systemd
+btrfstune           getfacl      ntfs-3g.probe  systemd-ask-password
+btrfs-zero-log      grep         ntfscat        systemd-escape
+bunzip2             gunzip       ntfscluster    systemd-hwdb
+busybox             gzexe        ntfscmp        systemd-inhibit
+bzcat               gzip         ntfsfallocate  systemd-machine-id-setup
+bzcmp               hciconfig    ntfsfix        systemd-notify
+bzdiff              hostname     ntfsinfo       systemd-sysusers
+bzegrep             ip           ntfsls         systemd-tmpfiles
+bzexe               journalctl   ntfsmove       systemd-tty-ask-password-agent
+bzfgrep             kbd_mode     ntfsrecover    tar
+bzgrep              keyctl       ntfssecaudit   tempfile
+bzip2               kill         ntfstruncate   touch
+bzip2recover        kmod         ntfsusermap    true
+bzless              less         ntfswipe       udevadm
+bzmore              lessecho     open           ulockmgr_server
+cat                 lessfile     openvt         umount
+chacl               lesskey      pidof          uname
+chgrp               lesspipe     ping           uncompress
+chmod               ln           ping4          unicode_start
+chown               loadkeys     ping6          vdir
+chvt                login        plymouth       wdctl
+cp                  loginctl     ps             which
+cpio                lowntfs-3g   pwd            whiptail
+dash                ls           rbash          ypdomainname
+date                lsblk        readlink       zcat
+dd                  lsmod        red            zcmp
+df                  mkdir        rm             zdiff
+dir                 mkfs.btrfs   rmdir          zegrep
+dmesg               mknod        rnano          zfgrep
+dnsdomainname       mktemp       run-parts      zforce
+domainname          more         sed            zgrep
+dumpkeys            mount        setfacl        zless
+echo                mountpoint   setfont        zmore
+ed                  mt           setupcon       znew
+administrateur@pc-linuxshop-8796:~$ ls -l /bin
+total 16380
+-rwxr-xr-x 1 root root    6216 mars  22  2019 archdetect
+-rwxr-xr-x 1 root root 1113504 juin   7  2019 bash
+-rwxr-xr-x 1 root root  748968 août  29  2018 brltty
+-rwxr-xr-x 1 root root  716464 mars  13  2018 btrfs
+lrwxrwxrwx 1 root root       5 févr. 22  2019 btrfsck -> btrfs
+-rwxr-xr-x 1 root root  375952 mars  13  2018 btrfs-debug-tree
+-rwxr-xr-x 1 root root  371856 mars  13  2018 btrfs-find-root
+-rwxr-xr-x 1 root root  396432 mars  13  2018 btrfs-image
+-rwxr-xr-x 1 root root  375952 mars  13  2018 btrfs-map-logical
+-rwxr-xr-x 1 root root  371856 mars  13  2018 btrfs-select-super
+-rwxr-xr-x 1 root root  375952 mars  13  2018 btrfstune
+-rwxr-xr-x 1 root root  371856 mars  13  2018 btrfs-zero-log
+-rwxr-xr-x 3 root root   34888 juil.  4  2019 bunzip2
+-rwxr-xr-x 1 root root 2062296 mars   6  2019 busybox
+-rwxr-xr-x 3 root root   34888 juil.  4  2019 bzcat
+lrwxrwxrwx 1 root root       6 juil.  4  2019 bzcmp -> bzdiff
+-rwxr-xr-x 1 root root    2140 juil.  4  2019 bzdiff
+lrwxrwxrwx 1 root root       6 juil.  4  2019 bzegrep -> bzgrep
+-rwxr-xr-x 1 root root    4877 juil.  4  2019 bzexe
+lrwxrwxrwx 1 root root       6 juil.  4  2019 bzfgrep -> bzgrep
+-rwxr-xr-x 1 root root    3642 juil.  4  2019 bzgrep
+-rwxr-xr-x 3 root root   34888 juil.  4  2019 bzip2
+-rwxr-xr-x 1 root root   14328 juil.  4  2019 bzip2recover
+lrwxrwxrwx 1 root root       6 juil.  4  2019 bzless -> bzmore
+-rwxr-xr-x 1 root root    1297 juil.  4  2019 bzmore
+-rwxr-xr-x 1 root root   35064 janv. 18  2018 cat
+-rwxr-xr-x 1 root root   14328 avril 21  2017 chacl
+-rwxr-xr-x 1 root root   63672 janv. 18  2018 chgrp
+-rwxr-xr-x 1 root root   59608 janv. 18  2018 chmod
+-rwxr-xr-x 1 root root   67768 janv. 18  2018 chown
+-rwxr-xr-x 1 root root   10312 janv. 22  2018 chvt
+-rwxr-xr-x 1 root root  141528 janv. 18  2018 cp
+-rwxr-xr-x 1 root root  157224 nov.   5 19:09 cpio
+-rwxr-xr-x 1 root root  121432 janv. 25  2018 dash
+-rwxr-xr-x 1 root root  100568 janv. 18  2018 date
+-rwxr-xr-x 1 root root   76000 janv. 18  2018 dd
+-rwxr-xr-x 1 root root   84776 janv. 18  2018 df
+-rwxr-xr-x 1 root root  133792 janv. 18  2018 dir
+-rwxr-xr-x 1 root root   72000 janv.  8 19:31 dmesg
+lrwxrwxrwx 1 root root       8 févr. 22  2019 dnsdomainname -> hostname
+lrwxrwxrwx 1 root root       8 févr. 22  2019 domainname -> hostname
+-rwxr-xr-x 1 root root  170520 janv. 22  2018 dumpkeys
+-rwxr-xr-x 1 root root   35000 janv. 18  2018 echo
+-rwxr-xr-x 1 root root   51512 avril 26  2016 ed
+-rwxr-xr-x 1 root root   18424 avril 21  2017 efibootdump
+-rwxr-xr-x 1 root root   40056 avril 21  2017 efibootmgr
+-rwxr-xr-x 1 root root      28 sept. 18 17:00 egrep
+-rwxr-xr-x 1 root root   30904 janv. 18  2018 false
+-rwxr-xr-x 1 root root   10312 janv. 22  2018 fgconsole
+-rwxr-xr-x 1 root root      28 sept. 18 17:00 fgrep
+-rwxr-xr-x 1 root root   64784 janv.  8 19:31 findmnt
+-rwxr-xr-x 1 root root    1185 mars  13  2018 fsck.btrfs
+-rwxr-xr-x 1 root root   35928 déc.  11  2018 fuser
+-rwsr-xr-x 1 root root   30800 août  11  2016 fusermount
+-rwxr-xr-x 1 root root   23160 avril 21  2017 getfacl
+-rwxr-xr-x 1 root root  219456 sept. 18 17:00 grep
+-rwxr-xr-x 1 root root    2301 avril 28  2017 gunzip
+-rwxr-xr-x 1 root root    5927 avril 28  2017 gzexe
+-rwxr-xr-x 1 root root  101560 avril 28  2017 gzip
+-rwxr-xr-x 1 root root  196632 janv.  6 09:30 hciconfig
+-rwxr-xr-x 1 root root   18504 janv. 31  2018 hostname
+-rwxr-xr-x 1 root root  570784 mars  21  2019 ip
+-rwxr-xr-x 1 root root   63576 févr.  6 16:00 journalctl
+-rwxr-xr-x 1 root root   10312 janv. 22  2018 kbd_mode
+-rwxr-xr-x 1 root root   30792 avril 18  2018 keyctl
+-rwxr-xr-x 1 root root   26704 août   9  2019 kill
+-rwxr-xr-x 1 root root  149688 nov.  12  2018 kmod
+-rwxr-xr-x 1 root root  170760 déc.   1  2017 less
+-rwxr-xr-x 1 root root   10256 déc.   1  2017 lessecho
+lrwxrwxrwx 1 root root       8 févr. 22  2019 lessfile -> lesspipe
+-rwxr-xr-x 1 root root   19856 déc.   1  2017 lesskey
+-rwxr-xr-x 1 root root    8564 déc.   1  2017 lesspipe
+-rwxr-xr-x 1 root root   67808 janv. 18  2018 ln
+-rwxr-xr-x 1 root root  211528 janv. 22  2018 loadkeys
+-rwxr-xr-x 1 root root   52664 mars  22  2019 login
+-rwxr-xr-x 1 root root   51280 févr.  6 16:00 loginctl
+-rwxr-xr-x 1 root root  109232 mars  21  2019 lowntfs-3g
+-rwxr-xr-x 1 root root  133792 janv. 18  2018 ls
+-rwxr-xr-x 1 root root   84048 janv.  8 19:31 lsblk
+lrwxrwxrwx 1 root root       4 nov.  12  2018 lsmod -> kmod
+-rwxr-xr-x 1 root root   80056 janv. 18  2018 mkdir
+-rwxr-xr-x 1 root root  396464 mars  13  2018 mkfs.btrfs
+-rwxr-xr-x 1 root root   67768 janv. 18  2018 mknod
+-rwxr-xr-x 1 root root   43192 janv. 18  2018 mktemp
+-rwxr-xr-x 1 root root   38952 janv.  8 19:31 more
+-rwsr-xr-x 1 root root   43088 janv.  8 19:31 mount
+-rwxr-xr-x 1 root root   14408 janv.  8 19:31 mountpoint
+lrwxrwxrwx 1 root root      20 févr. 22  2019 mt -> /etc/alternatives/mt
+-rwxr-xr-x 1 root root   80512 nov.   5 19:09 mt-gnu
+-rwxr-xr-x 1 root root  137440 janv. 18  2018 mv
+-rwxr-xr-x 1 root root  245872 mars   6  2018 nano
+lrwxrwxrwx 1 root root      20 févr. 22  2019 nc -> /etc/alternatives/nc
+-rwxr-xr-x 1 root root   35312 mai   14  2018 nc.openbsd
+lrwxrwxrwx 1 root root      24 févr. 22  2019 netcat -> /etc/alternatives/netcat
+-rwxr-xr-x 1 root root  154192 janv. 10  2017 netstat
+-rwxr-xr-x 1 root root   43080 févr.  6 16:00 networkctl
+lrwxrwxrwx 1 root root       8 févr. 22  2019 nisdomainname -> hostname
+-rwxr-xr-x 1 root root  146128 mars  21  2019 ntfs-3g
+-rwxr-xr-x 1 root root   10312 mars  21  2019 ntfs-3g.probe
+-rwxr-xr-x 1 root root   26728 mars  21  2019 ntfscat
+-rwxr-xr-x 1 root root   34920 mars  21  2019 ntfscluster
+-rwxr-xr-x 1 root root   34920 mars  21  2019 ntfscmp
+-rwxr-xr-x 1 root root   34928 mars  21  2019 ntfsfallocate
+-rwxr-xr-x 1 root root   43120 mars  21  2019 ntfsfix
+-rwxr-xr-x 1 root root   55416 mars  21  2019 ntfsinfo
+-rwxr-xr-x 1 root root   31928 mars  21  2019 ntfsls
+-rwxr-xr-x 1 root root   30824 mars  21  2019 ntfsmove
+-rwxr-xr-x 1 root root  116840 mars  21  2019 ntfsrecover
+-rwxr-xr-x 1 root root   88672 mars  21  2019 ntfssecaudit
+-rwxr-xr-x 1 root root   38944 mars  21  2019 ntfstruncate
+-rwxr-xr-x 1 root root   30744 mars  21  2019 ntfsusermap
+-rwxr-xr-x 1 root root   47752 mars  21  2019 ntfswipe
+lrwxrwxrwx 1 root root       6 févr. 22  2019 open -> openvt
+-rwxr-xr-x 1 root root   18872 janv. 22  2018 openvt
+lrwxrwxrwx 1 root root      14 févr. 22  2019 pidof -> /sbin/killall5
+-rwsr-xr-x 1 root root   64424 juin  28  2019 ping
+lrwxrwxrwx 1 root root       4 juin  28  2019 ping4 -> ping
+lrwxrwxrwx 1 root root       4 juin  28  2019 ping6 -> ping
+-rwxr-xr-x 1 root root   38904 nov.  30  2018 plymouth
+-rwxr-xr-x 1 root root  133432 août   9  2019 ps
+-rwxr-xr-x 1 root root   35000 janv. 18  2018 pwd
+lrwxrwxrwx 1 root root       4 juin   7  2019 rbash -> bash
+-rwxr-xr-x 1 root root   43192 janv. 18  2018 readlink
+-rwxr-xr-x 1 root root      89 avril 26  2016 red
+-rwxr-xr-x 1 root root   63704 janv. 18  2018 rm
+-rwxr-xr-x 1 root root   43192 janv. 18  2018 rmdir
+lrwxrwxrwx 1 root root       4 févr. 22  2019 rnano -> nano
+-rwxr-xr-x 1 root root   18760 déc.  30  2017 run-parts
+-rwxr-xr-x 1 root root  109000 janv. 30  2018 sed
+-rwxr-xr-x 1 root root   35512 avril 21  2017 setfacl
+-rwxr-xr-x 1 root root   43144 janv. 22  2018 setfont
+-rwxr-xr-x 1 root root   39103 avril 23  2019 setupcon
+lrwxrwxrwx 1 root root       4 févr. 22  2019 sh -> dash
+lrwxrwxrwx 1 root root       4 févr. 22  2019 sh.distrib -> dash
+-rwxr-xr-x 1 root root   35000 janv. 18  2018 sleep
+-rwxr-xr-x 1 root root  156296 mars  21  2019 ss
+lrwxrwxrwx 1 root root       7 mars   6  2019 static-sh -> busybox
+-rwxr-xr-x 1 root root   75992 janv. 18  2018 stty
+-rwsr-xr-x 1 root root   44664 mars  22  2019 su
+-rwxr-xr-x 1 root root   35000 janv. 18  2018 sync
+-rwxr-xr-x 1 root root  182352 févr.  6 16:00 systemctl
+lrwxrwxrwx 1 root root      20 févr.  6 16:00 systemd -> /lib/systemd/systemd
+-rwxr-xr-x 1 root root   10320 févr.  6 16:00 systemd-ask-password
+-rwxr-xr-x 1 root root   14400 févr.  6 16:00 systemd-escape
+-rwxr-xr-x 1 root root   84328 févr.  6 16:00 systemd-hwdb
+-rwxr-xr-x 1 root root   14416 févr.  6 16:00 systemd-inhibit
+-rwxr-xr-x 1 root root   18496 févr.  6 16:00 systemd-machine-id-setup
+-rwxr-xr-x 1 root root   14408 févr.  6 16:00 systemd-notify
+-rwxr-xr-x 1 root root   43080 févr.  6 16:00 systemd-sysusers
+-rwxr-xr-x 1 root root   71752 févr.  6 16:00 systemd-tmpfiles
+-rwxr-xr-x 1 root root   26696 févr.  6 16:00 systemd-tty-ask-password-agent
+-rwxr-xr-x 1 root root  423312 janv. 21  2019 tar
+-rwxr-xr-x 1 root root   10104 déc.  30  2017 tempfile
+-rwxr-xr-x 1 root root   88280 janv. 18  2018 touch
+-rwxr-xr-x 1 root root   30904 janv. 18  2018 true
+-rwxr-xr-x 1 root root  584072 févr.  6 16:00 udevadm
+-rwxr-xr-x 1 root root   14328 août  11  2016 ulockmgr_server
+-rwsr-xr-x 1 root root   26696 janv.  8 19:31 umount
+-rwxr-xr-x 1 root root   35032 janv. 18  2018 uname
+-rwxr-xr-x 1 root root    2301 avril 28  2017 uncompress
+-rwxr-xr-x 1 root root    2762 janv. 22  2018 unicode_start
+-rwxr-xr-x 1 root root  133792 janv. 18  2018 vdir
+-rwxr-xr-x 1 root root   30800 janv.  8 19:31 wdctl
+-rwxr-xr-x 1 root root     946 déc.  30  2017 which
+-rwxr-xr-x 1 root root   26632 janv. 12  2018 whiptail
+lrwxrwxrwx 1 root root       8 févr. 22  2019 ypdomainname -> hostname
+-rwxr-xr-x 1 root root    1937 avril 28  2017 zcat
+-rwxr-xr-x 1 root root    1777 avril 28  2017 zcmp
+-rwxr-xr-x 1 root root    5764 avril 28  2017 zdiff
+-rwxr-xr-x 1 root root     140 avril 28  2017 zegrep
+-rwxr-xr-x 1 root root     140 avril 28  2017 zfgrep
+-rwxr-xr-x 1 root root    2131 avril 28  2017 zforce
+-rwxr-xr-x 1 root root    5938 avril 28  2017 zgrep
+-rwxr-xr-x 1 root root    2037 avril 28  2017 zless
+-rwxr-xr-x 1 root root    1910 avril 28  2017 zmore
+-rwxr-xr-x 1 root root    5047 avril 28  2017 znew
+administrateur@pc-linuxshop-8796:~$ pwd
+/home/administrateur
+administrateur@pc-linuxshop-8796:~$ cd ../home/administrateur/Bureau
+bash: cd: ../home/administrateur/Bureau: Aucun fichier ou dossier de ce type
+administrateur@pc-linuxshop-8796:~$ cd..
+cd.. : commande introuvable
+administrateur@pc-linuxshop-8796:~$ cd ..
+administrateur@pc-linuxshop-8796:/home$ ls
+administrateur
+administrateur@pc-linuxshop-8796:/home$ ls administrateur
+Bureau     Images   Musique  Public           Vidéos
+Documents  Modèles  PDF      Téléchargements
+administrateur@pc-linuxshop-8796:/home$ ls Bureau
+ls: impossible d'accéder à 'Bureau': Aucun fichier ou dossier de ce type
+administrateur@pc-linuxshop-8796:/home$ pwd
+/home
+administrateur@pc-linuxshop-8796:/home$ ls
+administrateur
+administrateur@pc-linuxshop-8796:/home$ cd home
+bash: cd: home: Aucun fichier ou dossier de ce type
+administrateur@pc-linuxshop-8796:/home$ ls home
+ls: impossible d'accéder à 'home': Aucun fichier ou dossier de ce type
+administrateur@pc-linuxshop-8796:/home$ ls
+administrateur
+administrateur@pc-linuxshop-8796:/home$ cd administrateur
+administrateur@pc-linuxshop-8796:~$ ls
+Bureau     Images   Musique  Public           Vidéos
+Documents  Modèles  PDF      Téléchargements
+administrateur@pc-linuxshop-8796:~$ cd Vidéos
+administrateur@pc-linuxshop-8796:~/Vidéos$ ls ~Téléchargements
+ls: impossible d'accéder à '~Téléchargements': Aucun fichier ou dossier de ce type
+administrateur@pc-linuxshop-8796:~/Vidéos$ ls ~/Téléchargements
+1NAPHUPP85-recapitulatif-cni.pdf  osthéofévrier.pdf
+2019188170132.pdf                 resiliationsfr.doc
+Conseillepoleemploi.pdf           sfr-facture-0.pdf
+DMP_GODARD_20191112.pdf           sfr-facture-B419-021428482.pdf
+document.pdf
+administrateur@pc-linuxshop-8796:~/Vidéos$ cd ~
+administrateur@pc-linuxshop-8796:~$ pwd
+/home/administrateur
+administrateur@pc-linuxshop-8796:~$ ls
+Bureau     Images   Musique  Public           Vidéos
+Documents  Modèles  PDF      Téléchargements
+administrateur@pc-linuxshop-8796:~$ ls Téléchargements
+1NAPHUPP85-recapitulatif-cni.pdf  osthéofévrier.pdf
+2019188170132.pdf                 resiliationsfr.doc
+Conseillepoleemploi.pdf           sfr-facture-0.pdf
+DMP_GODARD_20191112.pdf           sfr-facture-B419-021428482.pdf
+document.pdf
+administrateur@pc-linuxshop-8796:~$ cd ~/Musique
+administrateur@pc-linuxshop-8796:~/Musique$ 
